@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honey Home | ร้านน้ำผึ้งธรรมชาติ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">🍯 Honey Home</div>
+
+        <nav>
+            <a href="#home">หน้าแรก</a>
+            <a href="#products">สินค้า</a>
+            <a href="#about">เกี่ยวกับเรา</a>
+            <a href="#contact">ติดต่อ</a>
+        </nav>
+
+        <a href="#products" class="nav-button">เลือกซื้อสินค้า</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="subtitle">NATURAL HONEY • 100% PURE</p>
+            <h1>ความหวานจากธรรมชาติ<br>ส่งตรงถึงคุณ</h1>
+            <p>
+                คัดสรรน้ำผึ้งคุณภาพดีจากธรรมชาติ
+                เพื่อมอบความอร่อยและความสุขในทุกวัน
+            </p>
+            <a href="#products" class="main-button">
+                เลือกชมสินค้า
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <img src="assets/images/honey1.jpg"
+                 alt="น้ำผึ้งธรรมชาติ">
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+        <div class="section-heading">
+            <p class="subtitle">OUR PRODUCTS</p>
+            <h2>สินค้าของเรา</h2>
+            <p>เลือกน้ำผึ้งที่คุณชื่นชอบ</p>
+        </div>
+
+        <div class="product-container" id="product-list">
+
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="assets/images/honey1.jpg"
+                     alt="น้ำผึ้งดอกลำไย">
+
+                <div class="product-info">
+                    <h3>น้ำผึ้งดอกลำไย</h3>
+                    <p>น้ำผึ้งธรรมชาติ กลิ่นหอมละมุน</p>
+                    <div class="price">150 บาท</div>
+                    <button class="buy-button"
+                            onclick="addToCart('HN001')">
+                        เพิ่มลงตะกร้า
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="assets/images/honey2.jpg"
+                     alt="น้ำผึ้งดอกไม้ป่า">
+
+                <div class="product-info">
+                    <h3>น้ำผึ้งดอกไม้ป่า</h3>
+                    <p>น้ำผึ้งจากดอกไม้นานาชนิด</p>
+                    <div class="price">180 บาท</div>
+                    <button class="buy-button"
+                            onclick="addToCart('HN002')">
+                        เพิ่มลงตะกร้า
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <p class="subtitle">ABOUT HONEY HOME</p>
+        <h2>ความใส่ใจในทุกหยด</h2>
+        <p>
+            Honey Home มุ่งมั่นคัดสรรน้ำผึ้งคุณภาพ
+            เพื่อส่งมอบผลิตภัณฑ์จากธรรมชาติ
+            ให้ถึงมือลูกค้าด้วยความใส่ใจ
+        </p>
+    </section>
+
+    <!-- Cart -->
+    <section class="cart" id="cart">
+        <h2>🛒 ตะกร้าสินค้า</h2>
+        <div id="cart-items">
+            <p>ยังไม่มีสินค้าในตะกร้า</p>
+        </div>
+        <h3>ยอดรวม: <span id="cart-total">0</span> บาท</h3>
+        <button class="buy-button" onclick="checkout()">
+            ดำเนินการสั่งซื้อ
+        </button>
+    </section>
+
+    <!-- Contact -->
+    <footer id="contact">
+        <h2>🍯 Honey Home</h2>
+        <p>ร้านน้ำผึ้งธรรมชาติของคุณ</p>
+        <p>ขอบคุณที่เลือกซื้อสินค้ากับเรา</p>
+        <p>© 2026 Honey Home. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
